@@ -1,0 +1,149 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0d0d0d;
+  color: #f0ece4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  padding: 1.2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #C9A84C;
+  letter-spacing: 0.05em;
+}
+
+.logo span { color: #f0ece4; }
+
+nav p { font-size: 0.75rem; color: #666; }
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1050px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5rem 2.5rem;
+  gap: 6rem;
+  align-items: center;
+}
+
+.info h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.info h1 .gold { color: #C9A84C; }
+
+.info p {
+  font-size: 0.88rem;
+  color: #777;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.chips { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+
+.chip {
+  font-size: 0.72rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #252525;
+  color: #888;
+  border-radius: 100px;
+}
+
+.login-card {
+  background: #141414;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 2.5rem;
+}
+
+.login-card h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.login-card .sub {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.form-group { margin-bottom: 1.1rem; }
+
+label {
+  display: block;
+  font-size: 0.72rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+input {
+  width: 100%;
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 6px;
+  color: #f0ece4;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus { border-color: #C9A84C; }
+
+input::placeholder { color: #2e2e2e; }
+
+.btn-login {
+  width: 100%;
+  background: #C9A84C;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 6px;
+  padding: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.btn-login:hover { background: #dbb95a; }
+
+.register-link {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #444;
+  margin-top: 1.2rem;
+}
+
+.register-link a {
+  color: #C9A84C;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid #1a1a1a;
+  padding: 1.2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p { font-size: 0.7rem; color: #383838; }
